@@ -4,7 +4,6 @@
   "description": "Extremly simple RESTApi Server with mongo and node",
   "main": "index.js",
   "scripts": {
-    "test": "test",
     "start": "npm install && node ./scripts/server.js"
   },
   "repository": {
