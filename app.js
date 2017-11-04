@@ -9,9 +9,8 @@ const projects = require("./api/projects/route.js");
 const mongoose = require('mongoose');
 mongoose.set('debug', true);
 
-
 //conection with default production db
-mongoose.connect('mongodb://piorot2:Test123abc@ds237445.mlab.com:37445/heroku_p4nmksq9');
+mongoose.connect(`mongodb://${process.env.mongo_db_user}:${process.env.mongo_db_passwd}@ds237445.mlab.com:37445/heroku_p4nmksq9`);
 
 
 app.use(morgan('tiny'));
