@@ -6,7 +6,7 @@ var projectsRepository = require('./repository');
 
 mongoose.Promise = require('bluebird');
 
-router.get('/project/:id/', function (req, res) {
+router.get('/projects/:id/', function (req, res) {
     return projectsRepository.getProjectById(req.params.id)
         .then((elements) => res.json(elements))
         .catch((err) => res.status(400).send(err.name + " : " + err.message))
