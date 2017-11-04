@@ -1,8 +1,12 @@
-
 language: node_js
 node_js:
 - '6.11'
 script:
-- - npm install
-    
-
+- npm install
+deploy:
+  provider: heroku
+  api_key:
+    secure: oB4EoOm3V07PUP5MZznzYfCFBeybVKrD99YsOJPbrRTsqo9ms9FKRGPH5PMDlApJMapg2If3pylRnjdECgmN6NGX7s+wUXQq0neVp3RVXCqHNYnotmbY6n3sVCoOyV51IclmPTcG7vSp2sUfgfxQP1jiZGsrchZbe7FJkzf5uTMsS2fRvnB979R66vBYHO0wqQ/bTHapv7IKmjALlE9DsiLvBUtKRGX4vlKmH46J2aKmogh+Y0vD/JLsvbkGp3XO+DZr9oLjZejApvhRzMWr1I6P4FIO3N23BHhZaYRkQ8uFA5ykBnHL11VMy3HTJH7tvTd2jt4yONnN6JypIbMtALvnJhtLI25wX4/J7roBfokbBR8UBeu7WFZnegS7JVQuxDGcN9BaodLdXiLrMeF9+W1m29NlnkUbLPmod0H6SWlskNwBwGcXtGyvDVE42O76NMu5ChbM+raI8MMTterUvprm9vjj3e7aeCXoGlopWD465TdwApMWwmNJWE6IolnCI3A13afi6YgI65EnLekkk++3Z41LfsKO1zJJquiq06pZzIaZIOcXgsV+J+VwPMsb4YWn2pXKk9kZo21pTK4YPbPZ1oUp0bVmhh40MEaDKKYx95HTH/NLTyEY2Qykdb8jLvgAB7MnP8ILFlzdJRLNxVEGco37Qy4fEMCvIVKnsRc=
+  app: refactored-happiness-api
+  on:
+    repo: piorot/refactored-happiness-api
