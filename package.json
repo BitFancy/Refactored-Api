@@ -7,6 +7,10 @@
     "test": "test",
     "start": "npm install && node ./scripts/server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piorot/refactored-happiness-api.git"
+  },
   "author": "piorot",
   "license": "MIT",
   "dependencies": {
